@@ -1,0 +1,12 @@
+.section-shell {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: var(--space-4xl) var(--space-lg) var(--space-6xl);
+}
+
+@media (max-width: 600px) {
+  .section-shell {
+    padding: var(--space-3xl) var(--space-md) var(--space-4xl);
+  }
+}

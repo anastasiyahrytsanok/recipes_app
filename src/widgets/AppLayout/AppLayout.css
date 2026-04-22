@@ -1,0 +1,15 @@
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-layout__content {
+  flex: 1;
+  background: linear-gradient(
+    180deg,
+    var(--color-page-start) 0%,
+    var(--color-page-end) 100%
+  );
+  display: flex;
+}

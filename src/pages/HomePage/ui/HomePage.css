@@ -1,0 +1,123 @@
+.home {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4xl) var(--space-lg);
+  background: url("../../../assets/images/food-background.png") center / cover
+    no-repeat;
+}
+
+.home__content {
+  max-width: 550px;
+  color: var(--color-surface-primary);
+  text-align: center;
+}
+
+.home__welcome {
+  margin: 0;
+  font-size: 50px;
+  font-weight: var(--font-weight-bold);
+}
+
+.home__title {
+  margin: 0;
+  font-size: 48px;
+  font-weight: var(--font-weight-bold);
+}
+
+.home__title-primary {
+  color: #f29979;
+  font-family: "Brush Script MT", "Segoe Script", cursive;
+  font-size: 100px;
+  font-weight: var(--font-weight-bold);
+  line-height: 1;
+  letter-spacing: 0.2px;
+}
+
+.home__title-secondary {
+  color: var(--color-success-soft);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 84px;
+  font-style: italic;
+  font-weight: var(--font-weight-bold);
+  line-height: 1;
+}
+
+.home__subtitle {
+  margin: 10px 0 20px;
+  color: var(--color-surface-primary);
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.home__button {
+  padding: 12px 20px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-semibold);
+  background-color: var(--color-accent);
+  color: #ffffff;
+}
+
+.home__button:hover:not(:disabled) {
+  background-color: #e85a2a;
+}
+
+@media (max-width: 900px) {
+  .home {
+    padding: var(--space-3xl) var(--space-md);
+  }
+
+  .home__welcome {
+    font-size: 40px;
+  }
+
+  .home__title {
+    font-size: 40px;
+  }
+
+  .home__title-primary {
+    font-size: 76px;
+  }
+
+  .home__title-secondary {
+    font-size: 64px;
+  }
+
+  .home__subtitle {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home {
+    padding: var(--space-2xl) var(--space-sm);
+  }
+
+  .home__welcome {
+    font-size: 32px;
+  }
+
+  .home__title {
+    font-size: 32px;
+  }
+
+  .home__title-primary {
+    font-size: 56px;
+  }
+
+  .home__title-secondary {
+    font-size: 46px;
+  }
+
+  .home__subtitle {
+    margin: var(--space-xs) 0 var(--space-md);
+    font-size: 18px;
+  }
+
+  .home__button {
+    width: 100%;
+  }
+}

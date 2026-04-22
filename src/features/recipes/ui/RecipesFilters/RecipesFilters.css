@@ -1,0 +1,103 @@
+.recipes__search {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.recipes__search-wrapper {
+  position: relative;
+}
+
+.recipes__search-input {
+  width: 100%;
+  padding: 14px 40px 14px 16px;
+  border: 1px solid var(--color-input-border);
+  border-radius: 12px;
+  background-color: var(--color-input-background);
+  color: var(--color-text-primary);
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.recipes__search-input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(240, 141, 104, 0.15);
+}
+
+.recipes__search-clear {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  color: #8a7a6a;
+  font-size: 18px;
+  line-height: 1;
+  transform: translateY(-50%);
+}
+
+.recipes__search-clear:hover:not(:disabled) {
+  color: var(--color-accent);
+}
+
+.recipes__select-tags {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 420px;
+  margin: var(--space-md) auto 0;
+}
+
+.recipes__select-label {
+  color: var(--color-text-secondary-soft);
+  font-size: var(--font-size-label);
+  font-weight: var(--font-weight-semibold);
+}
+
+.recipes__select-wrapper {
+  position: relative;
+}
+
+.recipes__select-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #8a7a6a;
+  border-bottom: 2px solid #8a7a6a;
+  pointer-events: none;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.recipes__select {
+  width: 100%;
+  padding: 14px 40px 14px 16px;
+  border: 1px solid var(--color-input-border);
+  border-radius: 12px;
+  appearance: none;
+  background-color: var(--color-input-background);
+  color: var(--color-text-primary);
+  font-size: 15px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.recipes__select:hover {
+  border-color: #d8c7b8;
+}
+
+.recipes__select:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(240, 141, 104, 0.15);
+}
+
+.recipes__select option {
+  color: var(--color-text-primary);
+}
