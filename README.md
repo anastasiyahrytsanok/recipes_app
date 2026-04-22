@@ -1,5 +1,7 @@
 # 🍽️ Tasty Recipes
 
+https://anastasiyahrytsanok.github.io/recipes_app/
+
 A modern recipe management application built with React, TypeScript, Redux Toolkit, and TanStack Router.
 
 ---
